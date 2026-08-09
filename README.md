@@ -1,28 +1,22 @@
-#include <stdio.h> 
-#include<math.h>
-void main()
-int n, n1, temp, l= 0 ,rem, sum = 0;
-printf("enter n value");
+#include <stdio.h>
+Void main()
+{
+int sum=0,n,i=1;
+printf ("enter n value");
 scanf("%d", &n);
-n1=n;
-temp=n;
-while(n>0)
+while (i < n)
 {
-l+=1;
-n = n / 10;
+if( n%10 ==0)
+{
+sum += i
 }
-while(n1> 0)
-{
-rem = n1 %10;
-sum = sum + pow (rem, l);
-n1=n1/10;
+i++;
 }
-if(temp==sum)
-{
-printf('%d is armstrong", temp);
+if( sum ==n)
+printf("%d is Perfect", n);
 }
 else
 {
-printf("%d is not armstrong", temp);
+printf("%d is not Pertect", n);
 }
 }
